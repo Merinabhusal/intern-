@@ -31,8 +31,10 @@
     </div>
 
     <a id="topbtn" class="bg-indigo-900 cursor-pointer text-white rounded fixed right-5 bottom-10 p-2 text-2xl"><i class="ri-arrow-up-s-line"></i></a>
-    <nav class="flex justify-between items-center px-12 shadow-lg py-2 sticky top-0 bg-white">
+    <nav class="hidden lg:flex justify-between items-center px-12 shadow-lg py-2 sticky top-0 bg-white">
         <img src="https://www.bitmapitsolution.com/images/logo/logo.png"alt=""class="w-32 ">
+            
+       </div>
         <div>
             <a class="px-5 text-blue-800" href="index.html">Home</a>
             <a class="px-5 text-blue-800" href="aboutus.html">About us</a>
@@ -46,31 +48,60 @@
         <a href="login.html" class="bg-indigo-700 text-white px-2 hover:bg-red-600">Login</a>
 
     </nav>
-<div class="grid grid-cols-2 gap-10 bg-indigo-900 p-20 pb-40 items-center">
+
+
+    <nav class=" block lg:hidden px-4 bg-white shadow-lg py-2 sticy top-0 z-20">
+
+        <div class="flex justify-between items-center">
+            <img src="https://www.bitmapitsolution.com/images/logo/logo.png"alt=""class="w-32">
+            <i onclick="toggleMenu()" class="ri-menu-line text-3xl"></i>
+        </div>
+        <div id="mynav"class="hidden">
+
+            <div>
+                <a class="block my-4 text-blue-800" href="index.html">Home</a>
+                <a class="block my-4 text-blue-800" href="aboutus.html">About us</a>
+                <a class="block my-4 text-blue-800" href="services.html">Services</a>
+                <a  class="blockmy-4 text-blue-800"href="projects.html">Projects</a>
+                <a  class="blockmy-4 text-blue-800"href="blogs.html">Blogs</a>
+                <a  class="blockmy-4 text-blue-800"href="contact.html">Contact us</a>
+                
+            </div>
+            <a href="" class="bg-indigo-700 text-white px-2 bg-red-600">Get IT Support</a>
+
+            <a href="login.html" class="bg-indigo-700 text-white px-2 hover:bg-red-600">Login</a>
+    
+        </div>
+       
+        
+
+    </nav>
+
+<div class="grid md:grid-cols-2 gap-10 bg-indigo-900 md:p-20 p-5 pb-40 items-center">
 
    <div>
-    <h1 class="font-bold text-white text-4xl leading-normal">IT Solution & Graphic Services Company</h1>
+    <h1 class="font-bold text-white md:text-4xl text-2xl leading-normal">IT Solution & Graphic Services Company</h1>
     <p class="text-gray-100">Presenting your business in a digital mode is known to be a smarter way of doing business.<br>
         LET THE WORLD KNOW YOU EXIST</p>
         <div class="mt-10">
-            <a class="bg-white rounded-lg px-24 py-4 mx-1 hover:bg-blue-600" href="">About Us</a>
-            <a class="bg-red-600 text-white rounded-lg px-24 py-4 mx-1 hover:bg-blue-600" href="">Contact Us</a>
+            <a class="bg-white inline-block px-24 py-4 mx-1 hover:bg-blue-600" href="">About Us</a>
+            <a class="bg-red-600 inline-block mt-5 text-white rounded-lg px-24 py-4 mx-1 hover:bg-blue-600" href="">Contact Us</a>
         </div>
  
    </div> 
    <div>
-    <img  class="w-8/12 ml-auto mr-16"src="https://www.bitmapitsolution.com/images/home.png" alt="">
+    <img  class=" lg:w-8/12 md:w-11/12 ml-auto xl:py-10 xl:py-5 lg:mr-16"src="https://www.bitmapitsolution.com/images/home.png" alt="">
    </div>
    
 </div>
-<img src="https://www.bitmapitsolution.com/images/home_bottom_shape.png" alt=""class="-mt-52 w-full h-56">
+<img src="https://www.bitmapitsolution.com/images/home_bottom_shape.png" alt=""class="md:-mt-52 w-full md:h-56 h-36 -mt-32">
 
 <section class="py-20 "id="services">
 
     <h1 class="text-4xl text-center text-indigo-900"> Services </h1>
     <p class="text-center text-indigo-600 py-2"> We provide the following Services as per the need of the clients.</p>
 
-<div class="grid grid-cols-3 gap-10 mt-5 px-24">
+<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 mt-5 lg:px-24">
  <div class="lg:flex items-center gap-8 mx-4 lg:text-left text-center hover:scale-105 duration-300">
             <img src="https://www.bitmapitsolution.com/images/html.png"alt="">
 <div>
@@ -79,11 +110,11 @@
            
              </div>
 
-             <div class="lg:flex items-center gap-8 mx-4 lg:text-left text-center hover:scale-105 duration-300">
+             <div class="lg:flex items-center gap-8 mx-4 lg:text-left text-center bg-gradient-to-bl from-blue-300 to-red-300 hover:from-red-400 hover:to-blue-600 hover:to-blue-600 hover:bg-gradient-to-br hover:scale-105 duration-300">
                 <img src="https://www.bitmapitsolution.com/images/graphic-design.png" class="w-24" alt="">
                 <div>
                     <h1 class=" text-xl font-bold ">Graphic Design</h1>
-              <p class="mt-4 text-gray-500 ">Let the market know you exist. Website is the identity of your business on digital market.</p>
+              <p class="mt-4 text-gray-500  ">Let the market know you exist. Website is the identity of your business on digital market.</p>
             </div>
                
                  </div>
@@ -381,7 +412,7 @@
 <section class="my-20" id="blogs">
     <h1 class="text-3xl text-center text-indigo-900">Blogs & Articles</h1>
     <p class="text-center text-indigo-600 py-2">Recent Blog</p>
-    <div class="grid grid-cols-3 gap-10 px-24">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10 xl:px-24 md:px-10 px-5">
         <div class=" shadow rounded-lg ">
           <img src="https://www.bitmapitsolution.com/images/blog_images/graphic_1684144239.jpg"class="rounded-lg"alt="">
           <div class="flex justify-between px-4 text-indigo-600">
@@ -528,25 +559,25 @@
        
 
 <footer>
-    <div class="grid grid-cols-4 bg-indigo-900 p-10 ">
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 bg-indigo-900 p-10 ">
         <div>
         <h1 class=" text-white p-6 text-xl font-bold">BITMAP I.T. SOLUTION PVT. LTD. </h1>
         <p class=" text-white text-sm text-justify pl-5 "> BITS is a creatively driven integrated Business Consulting, Advertising agency and IT company located in Narayangarh that creates high-impact business solutions for both traditional and digital media to its clients.</p>
         </div>
 
     <div class="text-white ">
-        <h1 class="text-white p-6 text-xl font-bold px-24">USEFUL LINKS</h1>
-        <a href="" class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">Home</a>
-        <a href=""class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">AboutUs</a>
-        <a href=""class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">Services</a>
-        <a href=""class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">Projects</a>
-        <a href=""class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">Blogs</a>
-        <a href=""class="py-6 px-24 hover:text-indigo-400 text-sm mt-4">Contact Us</a>
+        <h1 class="text-white p-6 text-xl font-bold ">USEFUL LINKS</h1>
+        <a href="" class=" block py-2 pl-5 hover:text-indigo-400 text-sm ">Home</a>
+        <a href=""class="block py-2 pl-5 hover:text-indigo-400 text-sm ">AboutUs</a>
+        <a href=""class="block py-2 pl-5 hover:text-indigo-400 text-sm">Services</a>
+        <a href=""class="block py-2 pl-5 hover:text-indigo-400 text-sm ">Projects</a>
+        <a href=""class="block py-2 pl-5 hover:text-indigo-400 text-sm">Blogs</a>
+        <a href=""class="block py-2 pl-5 hover:text-indigo-400 text-sm">Contact Us</a>
 
         </div>
     <div>
         <h1 class="text-white p-6 text-xl font-bold ">CONTACT US</h1>
-        <ul class="text-white py-2 px-4 ">
+        <ul class="text-white py-2 ">
             <p class="flex items-center gap-2 py-2 text-sm">
             <i class="ri-map-pin-line ">  </i>
 <span>Bharatpur-3, Belchowk, Narayangarh, Nepal</span>
@@ -654,7 +685,7 @@ const swiper = new Swiper('.swiper1', {
       direction: 'horizontal',
       loop: true,
       autoplay:true,
-      slidesPerView:5,
+      slidesPerView:1,
       spaceBetween:30,
     
       // If we need pagination
@@ -662,11 +693,42 @@ const swiper = new Swiper('.swiper1', {
         el: '.swiper-pagination',
         clickable:true,
       },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
     
       
-    });
+   
     
     
     </script>
+
+
+<script>
+    function toggleMenu()
+    {
+        var menu = document.getElementById('mynav');
+        if(menu.style.display!=='block')
+        {
+            menu.style.display='block';
+        }
+        else{
+            menu.syle.display='none';
+        }
+    }
+</script>
 </body>
 </html>
